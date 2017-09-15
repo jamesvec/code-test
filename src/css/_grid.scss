@@ -14,11 +14,25 @@
 
     &:nth-child(odd) {
       clear: left;
+      padding-right: 10px;
+    }
+
+    &:nth-child(even) {
+      padding-left: 10px;
     }
   }
 
   @include breakpoint(large) {
     width: 25%;
+    padding: 0 10px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
 
     &:nth-child(odd) {
       clear: none;
