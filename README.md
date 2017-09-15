@@ -1,4 +1,9 @@
 ## Environment setup
+If webpack is not installed
+
+```sh
+  $ npm webpack -g
+```
 
 ```sh
   $ npm install
