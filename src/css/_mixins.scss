@@ -1,0 +1,21 @@
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: $large-viewport) {
+      @content;
+    }
+  }
+  @else if $point == medium {
+    @media (min-width: $medium-viewport) {
+      @content;
+    }
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}

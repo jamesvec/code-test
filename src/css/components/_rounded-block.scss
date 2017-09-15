@@ -1,0 +1,20 @@
+.rounded-block {
+  background-color: $color-rose;
+  border-radius: 5px;
+  color: white;
+  height: 100px;
+  text-align: center;
+  max-width: 100%;
+}
+
+.rounded-block__wrap {
+  display: table;
+  height:  100px;
+  padding: 10px;
+  width:   100%;
+}
+
+.rounded-block__copy {
+  display: table-cell;
+  vertical-align: middle;
+}

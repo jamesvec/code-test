@@ -4,6 +4,7 @@ If webpack is not installed
 ```sh
   $ npm webpack -g
 ```
+then:
 
 ```sh
   $ npm install
