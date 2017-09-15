@@ -1,10 +1,7 @@
 
 .container {
   @include clearfix;
-
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 20px;
+  padding: 30px 20px;
   width: 100%;
 }
 
@@ -14,9 +11,17 @@
 
   @include breakpoint(medium) {
     width: 50%;
+
+    &:nth-child(odd) {
+      clear: left;
+    }
   }
 
   @include breakpoint(large) {
     width: 25%;
+
+    &:nth-child(odd) {
+      clear: none;
+    }
   }
 }

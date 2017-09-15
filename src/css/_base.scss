@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+  background: $color-grey;
   line-height: 1;
 }
 
@@ -56,5 +57,20 @@ table {
 }
 
 img {
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Oswald", sans-serif;
+}
+
+p, li, a {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 36px;
   width: 100%;
 }

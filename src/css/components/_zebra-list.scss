@@ -1,0 +1,13 @@
+.zebra-list {
+  padding: 20px;
+  width: 100%;
+}
+
+.zebra-list__item {
+  padding: 20px 10px;
+
+  &:nth-child(odd) {
+    background-color: $color-blue;
+    color: white;
+  }
+}
