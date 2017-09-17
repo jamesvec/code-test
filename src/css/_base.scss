@@ -70,8 +70,23 @@ p, li, a {
   line-height: 1.3;
 }
 
-h2 {
+input {
+  background-color: $color-grey-dark;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, .3);
   color: $color-white;
+  line-height: 20px;
+  padding: 5px;
+}
+
+button {
+  background-color: $color-blue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
 }
 
 .wrapper {

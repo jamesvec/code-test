@@ -1,0 +1,181 @@
+.hangman {
+  display: block;
+  width: 100%;
+}
+
+.hangman__board {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.letter-wrapper {
+  border-bottom: $color-rose 3px solid;
+  flex: 0 0 50px;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.letter {
+  bottom: -20px;
+  color: $color-black;
+  font-family: "Roboto Condensed", sans-serif;
+  opacity: 0;
+  position: relative;
+  transition: opacity .5s ease-in, bottom .5s ease-in;
+  visibility: hidden;
+
+  &._active {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.blank {
+  flex: 0 0 50px;
+  margin-right: 10px;
+}
+
+._error {
+  border: red 1px solid;
+}
+
+.hangman-wrapper {
+  display: none;
+  opacity: 0;
+  position: relative;
+  transition: opacity .5s ease;
+
+  &._active {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.secret-word-form,
+.guess-form {
+
+  input {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+.secret-word-form {
+
+  &._inactive {
+    display: none;
+  }
+}
+
+.hangman__man-hanger {
+  border-bottom: $color-black 5px solid;
+  border-right: $color-black 5px solid;
+  border-top: $color-black 5px solid;
+  height: 325px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+
+  &:after {
+    background-color: $color-black;
+    content: "";
+    display: block;
+    height: 20px;
+    position: absolute;
+    right: 190px;
+    top: 0;
+    width: 5px;
+  }
+}
+
+.hangman__man {
+  height: 325px;
+  margin: 0 auto;
+  position: relative;
+  width: 400px;
+
+}
+
+.hangman__man-part {
+  opacity: 0;
+  transition: opacity .5s ease-in;
+
+  &._active {
+    opacity: 1;
+  }
+}
+
+.hangman__man-left-arm,
+.hangman__man-left-leg,
+.hangman__man-right-arm,
+.hangman__man-right-leg,
+.hangman__man-body {
+  position: absolute;
+  width: 5px;
+}
+
+.hangman__man-head {
+  border: $color-black 5px solid;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  right: 172px;
+  top: 20px;
+  width: 50px;
+}
+
+.hangman__man-body {
+  background-color: $color-black;
+  height: 150px;
+  right: 195px;
+  top: 69px;
+}
+
+.hangman__man-left-arm {
+  right: 165px;
+  top: 29px;
+  transform: rotate(55deg);
+}
+
+.hangman__man-right-arm {
+  right: 225px;
+  top: 29px;
+  transform: rotate(-55deg);
+}
+
+.hangman__man-right-leg {
+  right: 217px;
+  top: 211px;
+  transform: rotate(35deg);
+}
+
+.hangman__man-left-leg {
+  right: 173px;
+  top: 211px;
+  transform: rotate(-35deg);
+}
+
+.hangman__man-left-arm,
+.hangman__man-left-leg,
+.hangman__man-right-arm,
+.hangman__man-right-leg {
+  background-color: $color-black;
+  height: 75px;
+}
+
+.reset-button {
+  display: none;
+  float: right;
+
+  &._active {
+    display: block;
+  }
+}

@@ -7,12 +7,35 @@
 </head>
 <body>
  <div class="container">
-   <h1>Hangman</h1>
-   <form id="secret-word-form" data-comp="SecretWordForm">
-      <label for="secret-word"><input type="text" name="" value="" class="secret-word-form__input" id="secret-word"></label>
+   <form id="secret-word-form" data-comp="SecretWordForm" class="secret-word-form">
+      <label for="secret-word">Enter Secret Word (Letters Only)<input type="text" name="secret-word" value="" class="secret-word-form__input" id="secret-word"></label>
       <button type="submit" class="secret-word-form__submit">Start New Game</button>
    </form>
-   
+    <section class="hangman-wrapper">
+      <div class="hangman" data-comp="Hangman">
+        <div class="hangman__man">
+          <div class="hangman__man-hanger"></div>
+          <div class="hangman__man-wrapper">
+            <div class="hangman__man-head hangman__man-part"></div>
+            <div class="hangman__man-body hangman__man-part"></div>
+            <div class="hangman__man-left-arm hangman__man-part"></div>
+            <div class="hangman__man-right-arm hangman__man-part"></div>
+            <div class="hangman__man-left-leg hangman__man-part"></div>
+            <div class="hangman__man-right-leg hangman__man-part"></div>
+          </div>
+        </div>
+        <div class="hangman__board">
+        </div>  
+      </div>
+      
+      <div class="guess-form"> 
+        <form id="guess-form" data-comp="GuessForm">
+          <label for="guess">Enter Letter (Letters Only)<input type="text/" name="guess" value="" maxlength="1" id="guess" class="guess-form__input"></label>
+          <button type="submit" class="guess-form__submit">Submit letter</button>
+        </form>
+      </div>
+      <button class="reset-button">Reset Game</button>
+    </section>
  </div>
 
  <script src="dist/js/bundle.js"></script>

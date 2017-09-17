@@ -1,10 +1,14 @@
 'use strict';
 require('../css/main.scss');
 
+import GuessForm from './components/GuessForm';
+import Hangman from './components/Hangman';
 import SecretWordForm from './components/SecretWordForm';
 
 // Component Registry
 const REGISTRY = {
+  GuessForm,
+  Hangman,
   SecretWordForm
 };
 
@@ -14,10 +18,7 @@ const PROPERTIES_ATTR = 'data-props';
 let instance = null;
 
 export default class Application {
-  /**
-   * Constructor for Application
-   * @return {Object} Singleton
-   */
+  
   constructor() {
     if (!instance) {
       instance = this;
