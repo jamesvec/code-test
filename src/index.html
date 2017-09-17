@@ -6,21 +6,33 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
-  <div class="instructions-block">
-    <p>Create a responsive layout with the following properties:</p>
-    <ul>
-      <li>Fixed position header and footer which span the entire width of the page.</li>
-      <li>4 columns for desktop resolutions, 2 columns for portrait tablet, and 1 column for phone.</li>
-      <li>Column 1 should contain an ordered list of 10 items with alternating background colors.</li>
-      <li>Column 2 should contain a div with 5px rounded corners.</li>
-      <li>Column 3 should contain a div with horizontally and vertically centered text which spans multiple lines.</li>
-      <li>Column 4 should contain and image which takes up the full width of the column.</li>
-      <li>Cross-browser compatible.  IE9+.  Graceful degradation for IE8 where appropriate.</li>
-    </ul>
-    <p>This should represent production-ready code, so show us code you would be proud to deploy.
-    <a href="html-test.html">Responsive Layout Solution</a>
-  </div>
-
-  <script src="dist/js/bundle.js"></script>
+  <section class="container">
+    <div class="instructions-block">
+      <p>Create a responsive layout with the following properties:</p>
+      <ul>
+        <li>Fixed position header and footer which span the entire width of the page.</li>
+        <li>4 columns for desktop resolutions, 2 columns for portrait tablet, and 1 column for phone.</li>
+        <li>Column 1 should contain an ordered list of 10 items with alternating background colors.</li>
+        <li>Column 2 should contain a div with 5px rounded corners.</li>
+        <li>Column 3 should contain a div with horizontally and vertically centered text which spans multiple lines.</li>
+        <li>Column 4 should contain and image which takes up the full width of the column.</li>
+        <li>Cross-browser compatible.  IE9+.  Graceful degradation for IE8 where appropriate.</li>
+      </ul>
+      <p>This should represent production-ready code, so show us code you would be proud to deploy.
+      <a href="html-test.html">Responsive Layout Solution</a>
+    </div>
+    <div class="instructions-block">  
+      <p>Using JS and HTML, create a version of the game Hangman (http://en.wikipedia.org/wiki/Hangman_(game)). The game can generally be implemented however you want but should adhere to the following:</p>
+      <ul>
+        <li>Start game by entering a word into a text box.</li>
+        <li>Display an underscore for each letter of the word.</li>
+        <li>Enter a letter guess into another textbox and submit by clicking a button.</li>
+        <li>Whenever a correct guess is made, reveal the letter in the word by replacing the corresponding underscore.</li>
+        <li>Whenever a wrong guess is made, draw another piece of the hangman.  To save time, you can just decrement a "Remaining Guesses" counter instead of actually drawing a hangman.</li>
+        <li>If you guess the word display a "You win!" alert, otherwise display a "You lose!" alert.</li>
+        <p>This should represent production-ready code, so show us code you would be proud to deploy. <a href="js-test.html">Hangman</a></p>
+      </ul>
+    </div>
+  </section>
 </body>
 </html>

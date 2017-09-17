@@ -62,15 +62,33 @@ img {
 
 h1, h2, h3, h4 {
   font-family: "Oswald", sans-serif;
+  margin-bottom: 20px;
 }
 
 p, li, a {
   font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.3;
+}
+
+h2 {
+  color: $color-white;
 }
 
 .wrapper {
   margin: 0 auto;
   max-width: 1200px;
-  padding-top: 36px;
+  padding: 36px 0;
   width: 100%;
+}
+
+.center-wrapper {
+  display: table;
+  height: 100px;
+  padding: 10px;
+  width: 100%;
+}
+
+.center-item {
+  display: table-cell;
+  vertical-align: middle;
 }

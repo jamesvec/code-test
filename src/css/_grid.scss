@@ -1,12 +1,15 @@
 
 .container {
   @include clearfix;
+
   padding: 30px 20px;
   width: 100%;
 }
 
 .column {
   float: left;
+  margin-bottom: 20px;
+  transition: all .5s ease-in;
   width: 100%;
 
   @include breakpoint(medium) {
@@ -23,8 +26,8 @@
   }
 
   @include breakpoint(large) {
-    width: 25%;
     padding: 0 10px;
+    width: 25%;
 
     &:first-child {
       padding-left: 0;

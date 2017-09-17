@@ -4,6 +4,7 @@
 }
 
 .zebra-list__item {
+  background-color: $color-green;
   padding: 20px 10px;
 
   &:nth-child(odd) {
