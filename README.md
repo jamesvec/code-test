@@ -7,6 +7,10 @@ If webpack is not installed
 then:
 
 ```sh
+  $ cd code-test
+```
+
+```sh
   $ npm install
 ```
 
@@ -15,11 +19,12 @@ then:
 Bundle assets and then start webpack server to view:
 
 ```sh
-  $ npm run bundle
+  $ npm start
 ```
+then open a new terminal window and run:
 
 ```sh
-  $ npm start
+  $ npm run bundle
 ```
 
 Open [http://localhost:3001](http://localhost:3001)
