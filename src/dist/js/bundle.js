@@ -44,6 +44,14 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	__webpack_require__(1);
+	(function webpackMissingModule() { throw new Error("Cannot find module \"server\""); }());
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	'use strict';
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
@@ -55,20 +63,20 @@
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 	
-	var _componentsGuessForm = __webpack_require__(1);
+	var _componentsGuessForm = __webpack_require__(2);
 	
 	var _componentsGuessForm2 = _interopRequireDefault(_componentsGuessForm);
 	
-	var _componentsHangman = __webpack_require__(5);
+	var _componentsHangman = __webpack_require__(6);
 	
 	var _componentsHangman2 = _interopRequireDefault(_componentsHangman);
 	
-	var _componentsSecretWordForm = __webpack_require__(6);
+	var _componentsSecretWordForm = __webpack_require__(7);
 	
 	var _componentsSecretWordForm2 = _interopRequireDefault(_componentsSecretWordForm);
 	
 	// Component Registry
-	__webpack_require__(7);
+	__webpack_require__(8);
 	
 	var REGISTRY = {
 	  GuessForm: _componentsGuessForm2['default'],
@@ -130,7 +138,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -149,11 +157,11 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var _Component2 = __webpack_require__(2);
+	var _Component2 = __webpack_require__(3);
 	
 	var _Component3 = _interopRequireDefault(_Component2);
 	
-	var _constantsIndex = __webpack_require__(4);
+	var _constantsIndex = __webpack_require__(5);
 	
 	var SELECTORS = {
 	  BLANK: '.blank',
@@ -384,7 +392,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -399,11 +407,11 @@
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 	
-	var _utilsPubSub = __webpack_require__(3);
+	var _utilsPubSub = __webpack_require__(4);
 	
 	var _utilsPubSub2 = _interopRequireDefault(_utilsPubSub);
 	
-	var _constantsIndex = __webpack_require__(4);
+	var _constantsIndex = __webpack_require__(5);
 	
 	var Component = (function () {
 	  function Component(el, props) {
@@ -467,7 +475,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -522,7 +530,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -549,7 +557,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -568,11 +576,11 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var _Component2 = __webpack_require__(2);
+	var _Component2 = __webpack_require__(3);
 	
 	var _Component3 = _interopRequireDefault(_Component2);
 	
-	var _constantsIndex = __webpack_require__(4);
+	var _constantsIndex = __webpack_require__(5);
 	
 	var SELECTORS = {
 	  BOARD: '.hangman__board'
@@ -664,7 +672,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -683,11 +691,11 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var _Component2 = __webpack_require__(2);
+	var _Component2 = __webpack_require__(3);
 	
 	var _Component3 = _interopRequireDefault(_Component2);
 	
-	var _constantsIndex = __webpack_require__(4);
+	var _constantsIndex = __webpack_require__(5);
 	
 	var SELECTORS = {
 	  GAME: '.hangman-wrapper',
@@ -794,7 +802,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
