@@ -23,3 +23,7 @@ Start webpack server to view:
 ```
 
 Open [http://localhost:3001](http://localhost:3001)
+
+or:
+
+Navigate to the the index.html file at src/index.html and just open it in chrome
