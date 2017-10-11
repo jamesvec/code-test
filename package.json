@@ -4,7 +4,7 @@
   "description": "code test for Ogilvy",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.js --content-base src/ --port 3001 --hot --inline",
+    "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.js --content-base src/ --port 3000 --hot --inline",
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundle": "./node_modules/.bin/webpack --config webpack.config.js",
     "watch": "./node_modules/.bin/webpack --config webpack.config.js --watch"
