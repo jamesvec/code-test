@@ -21,6 +21,5 @@ Start webpack server to view:
 ```sh
   $ npm start
 ```
-t
 
 Open [http://localhost:3001](http://localhost:3001)
