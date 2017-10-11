@@ -20,7 +20,6 @@ module.exports = {
   plugins: [
     // Specify the resulting CSS filename
     new ExtractTextPlugin('../css/main.css'),
-    new CleanWebpackPlugin('./src/dist'),
     // Stylelint plugin
     new styleLintPlugin({
       configFile: '.stylelintrc',
