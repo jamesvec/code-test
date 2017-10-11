@@ -3,4 +3,3 @@ node_modules
 .idea
 bundle.*
 npm-debug.log
-dist
