@@ -7,19 +7,20 @@ If webpack is not installed
 then:
 
 ```sh
+  $ cd code-test
+```
+
+```sh
   $ npm install
 ```
 
 ## Development
 
-Bundle assets and then start webpack server to view:
-
-```sh
-  $ npm run bundle
-```
+Start webpack server to view:
 
 ```sh
   $ npm start
 ```
+t
 
 Open [http://localhost:3001](http://localhost:3001)
