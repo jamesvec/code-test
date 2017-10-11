@@ -1,29 +1,9 @@
-## Environment setup
-If webpack is not installed
+## For Reviewers
 
-```sh
-  $ npm webpack -g
-```
-then:
+Navigate to the the index.html file at src/index.html and just open it in chrome.
 
-```sh
-  $ cd code-test
-```
+All code before processing is in the src dir as well.
 
-```sh
-  $ npm install
-```
 
-## Development
 
-Start webpack server to view:
 
-```sh
-  $ npm start
-```
-
-Open [http://localhost:3001](http://localhost:3001)
-
-or:
-
-Navigate to the the index.html file at src/index.html and just open it in chrome
